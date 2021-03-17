@@ -1,0 +1,107 @@
+/** reset **/
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+}
+button:focus {
+  border: none;
+  outline: none;
+}
+/****/
+
+body {
+  --r: 20px;
+  --one: #ff5252;
+  --two: #e040fb;
+  --three: #536dfe;
+  --four: #40c4ff;
+  --five: #64ffda;
+  --six: #b2ff59;
+  --seven: #ffff00;
+  --eight: #ffab40;
+  --nine: #ff3d00;
+  --ten: #dd2c00;
+}
+.red {
+  --one: #b71c1c;
+  --two: #c62828;
+  --three: #d32f2f;
+  --four: #e53935;
+  --five: #f44336;
+  --six: #ef5350;
+  --seven: #e57373;
+  --eight: #ef9a9a;
+  --nine: #ffcdd2;
+  --ten: #ffebee;
+}
+.blue {
+  --one: #0d47a1;
+  --two: #1565c0;
+  --three: #1976d2;
+  --four: #1e88e5;
+  --five: #2196f3;
+  --six: #42a5f5;
+  --seven: #64b5f6;
+  --eight: #90caf9;
+  --nine: #bbdefb;
+  --ten: #e3f2fd;
+}
+.orange {
+  --one: #e65100;
+  --two: #ef6c00;
+  --three: #f57c00;
+  --four: #fb8c00;
+  --five: #ff9800;
+  --six: #ffa726;
+  --seven: #ffb74d;
+  --eight: #ffcc80;
+  --nine: #ffe0b2;
+  --ten: #fff3e0;
+}
+body {
+  --r: 20px;
+}
+.wrapper {
+  display: flex;
+}
+.rainbow {
+  margin: calc(45vh - var(--r)) auto;
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  background-color: var(--one);
+  box-shadow: 0 0 0 calc(var(--r) * 1) var(--two),
+    0 0 0 calc(var(--r) * 2) var(--three), 0 0 0 calc(var(--r) * 3) var(--four),
+    0 0 0 calc(var(--r) * 4) var(--five), 0 0 0 calc(var(--r) * 5) var(--six),
+    0 0 0 calc(var(--r) * 6) var(--seven), 0 0 0 calc(var(--r) * 7) var(--eight),
+    0 0 0 calc(var(--r) * 8) var(--nine), 0 0 0 calc(var(--r) * 9) var(--ten);
+  border-radius: 50%;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 20%;
+}
+.btns button {
+  margin: 20px 20% 0 0;
+  padding: 12px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.btns .reset {
+  background-color: #ff5252;
+}
+.btns .blue {
+  background-color: #0d47a1;
+}
+.btns .orange {
+  background-color: #e65100;
+}
+.btns .red {
+  background-color: #b71c1c;
+}
